@@ -3,4 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="colorFacebook">#274b71</color>
+    <color name="colorGoogle">#255291</color>
+    <color name="colorTwitter">#2968a4</color>
+    <color name="colorEmail">#6e7e88</color>
+    <color name="terms_and_condition">#345464</color>
+    <color name="white_full">#FFF</color>
 </resources>

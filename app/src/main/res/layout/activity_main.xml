@@ -19,15 +19,113 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
     </android.support.design.widget.AppBarLayout>
+    
+    <LinearLayout
+        android:id="@+id/ll_curiosity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/curiosity"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
 
-    <include layout="@layout/content_main" />
+        <Button
+            android:id="@+id/btn_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/facebook_icon"
+            android:text="@string/sign_in_with_facebook"
+            android:background="@color/colorFacebook"
+            android:textAllCaps="false"
+            android:textColor="@color/white_full"
+            android:textAlignment="textStart"
+            android:layout_marginTop="240dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp">
+        </Button>
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+        <Button
+            android:id="@+id/btn_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/google_icon"
+            android:text="@string/sign_in_with_google"
+            android:background="@color/colorGoogle"
+            android:textAllCaps="false"
+            android:textColor="@color/white_full"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp">
+        </Button>
+
+        <Button
+            android:id="@+id/btn_twitter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/twitter_icon"
+            android:text="@string/sign_in_with_twitter"
+            android:background="@color/colorTwitter"
+            android:textAllCaps="false"
+            android:textColor="@color/white_full"
+            android:textAlignment="textStart"
+            android:layout_marginLeft="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginTop="10dp">
+        </Button>
+
+            <LinearLayout
+                android:id="@+id/ll_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp">
+
+                <Button
+                    android:id="@+id/btn_sign_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mail"
+                    android:text="@string/sign_up_email"
+                    android:background="@color/colorEmail"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_full"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1">
+                </Button>
+                <Button
+                    android:id="@+id/btn_sign_in"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/mail"
+                    android:text="@string/sign_in_email"
+                    android:background="@color/colorEmail"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_full"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1">
+                </Button>
+
+
+
+            </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_term_and_condition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/term_and_conditions"
+            android:textColor="@color/terms_and_condition"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:textSize="15sp"
+            android:gravity="center" />
+
+    </LinearLayout>
+
 
 </android.support.design.widget.CoordinatorLayout>
